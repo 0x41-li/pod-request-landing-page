@@ -47,3 +47,29 @@ body {
     background-position: top 130px right;
   }
 }
+
+// || Header
+
+.header {
+  margin-top: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 50px;
+    margin-left: 39px;
+    justify-content: start;
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin-top: 38px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-top: 102px;
+  }
+
+}
+
+
