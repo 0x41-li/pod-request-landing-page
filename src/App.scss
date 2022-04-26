@@ -1,0 +1,49 @@
+// || General
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Chivo", Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+
+  // background image
+  background-image: url("./assets/images/mobile-background.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+  // mixed with the color
+  background-color: #121725;
+
+  @media screen and (min-width: 768px) {
+    background-image: url("./assets/images/tablet-background.png");
+    background-size: 491px 767px;
+    background-position: top right;
+  }
+
+  
+  @media screen and (min-width: 1024px) {
+    background-image: url("./assets/images/desktop-background.png");
+    background-size: 60%;
+    background-position: top 60px right;
+  }
+
+  @media screen and (min-width: 1440px) {
+    background-image: url("./assets/images/desktop-background.png");
+    background-size: 888px 640px;
+    background-position: top 130px right;
+  }
+}
