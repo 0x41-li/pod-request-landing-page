@@ -56,6 +56,10 @@ body {
   color: #ffffff;
 }
 
+.d-n {
+  display: none;
+}
+
 // || Header
 
 .header {
@@ -153,7 +157,7 @@ h1 span {
 
   transform: translateY(-50%);
 
-  opacity: 0.5;
+  opacity: 0;
 
   color: #ffffff;
   font-size: 1.4rem;
@@ -164,8 +168,8 @@ h1 span {
 
 // hide label when input focused
 
-.content__form input:focus + label {
-  opacity: 0;
+.content__form input[value=""] + label {
+  opacity: 0.5;
 }
 
 .content__form-btn {
@@ -190,5 +194,13 @@ h1 span {
 
 .content__form-btn:active {
   background: #b3ffe2;
+}
 
+.content__form-error {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+
+  color: #fb3e3e;
+  margin-top: 8px;
+  margin-left: 32px;
 }
