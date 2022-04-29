@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/pod-request-landing-page/static/css/main.dd5c1d12.css",
+    "main.js": "/pod-request-landing-page/static/js/main.7f9bcfd3.js",
+    "static/media/desktop-background.png": "/pod-request-landing-page/static/media/desktop-background.5e519218122015a2ab11.png",
+    "static/media/tablet-background.png": "/pod-request-landing-page/static/media/tablet-background.953c8c7f4f5e65870c7d.png",
+    "static/media/mobile-background.png": "/pod-request-landing-page/static/media/mobile-background.0daf519691904ab3fe13.png",
+    "index.html": "/pod-request-landing-page/index.html",
+    "main.dd5c1d12.css.map": "/pod-request-landing-page/static/css/main.dd5c1d12.css.map",
+    "main.7f9bcfd3.js.map": "/pod-request-landing-page/static/js/main.7f9bcfd3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dd5c1d12.css",
+    "static/js/main.7f9bcfd3.js"
+  ]
+}
