@@ -92,6 +92,19 @@ body {
   margin-top: 57px;
 
   max-width: 375px;
+
+  @media screen and (min-width: 768px) {
+    background: #121725;
+    max-width: 635px;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 0;
+    margin: 0;
+    margin-top: 152px;
+    margin-left: 39px;
+  }
 }
 
 h1 {
@@ -100,6 +113,13 @@ h1 {
   color: #54e6af;
   text-align: center;
   text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 91px;
+    text-align: left;
+    font-size: 4.8rem;
+    line-height: 5.6rem;
+  }
 }
 
 h1 span {
@@ -113,18 +133,57 @@ h1 span {
   text-align: center;
 
   margin-top: 16px;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+    margin-top: 31px;
+    max-width: 445px;
+
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
 }
 
 .content__sponsors {
+  margin-top: 33px;
+  @media screen and (min-width: 768px) {
+    order: 2;
+    margin-top: 64px;
+  }
+}
+
+.content__sponsors .d-m {
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  margin-top: 33px;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.content__sponsors .d-d {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 40px;
+  }
+}
+
+.content__sponsors img {
+  max-width: 100%;
 }
 
 .content__form {
   margin-top: 48px;
+
+  @media screen and (min-width: 768px) {
+    position: relative;
+    margin-top: 40px;
+    width: 427px;
+  }
 }
 
 .content__input-box {
@@ -143,6 +202,12 @@ h1 span {
   color: #ffffff;
   font-size: 1.4rem;
   line-height: 2.8rem;
+
+  @media screen and (min-width: 768px) {
+    height: 56px;
+
+    padding-right: 194px;
+  }
 }
 
 // When input active
@@ -190,6 +255,16 @@ h1 span {
   cursor: pointer;
 
   transition: background-color 0.4s;
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+    margin-top: 0px;
+
+    width: 162px;
+  }
 }
 
 .content__form-btn:active {
@@ -203,4 +278,16 @@ h1 span {
   color: #fb3e3e;
   margin-top: 8px;
   margin-left: 32px;
+}
+
+
+// design: pattern points image
+
+.design__pattern-points {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-top: 153px;
+    margin-left: 30px;
+  }
 }
