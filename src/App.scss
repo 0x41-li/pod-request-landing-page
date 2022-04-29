@@ -45,7 +45,7 @@ body {
     background-position: top 60px right;
   }
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1200px) {
     background-image: url("./assets/images/desktop-background.png");
     background-size: 888px 640px;
     background-position: top 130px right;
@@ -78,8 +78,9 @@ body {
     margin-top: 38px;
   }
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1200px) {
     margin-top: 102px;
+    margin-left: 165px;
   }
 }
 
@@ -105,6 +106,12 @@ body {
     margin-top: 152px;
     margin-left: 39px;
   }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 103px;
+    margin-left: 165px;
+    max-width: 723px;
+  }
 }
 
 h1 {
@@ -119,6 +126,12 @@ h1 {
     text-align: left;
     font-size: 4.8rem;
     line-height: 5.6rem;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 88px;
+    font-size: 5.2rem;
+    line-height: 6.2rem;
   }
 }
 
@@ -141,6 +154,10 @@ h1 span {
 
     font-size: 1.8rem;
     line-height: 2.8rem;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 2.4rem;
   }
 }
 
@@ -280,7 +297,6 @@ h1 span {
   margin-left: 32px;
 }
 
-
 // design: pattern points image
 
 .design__pattern-points {
@@ -289,5 +305,11 @@ h1 span {
     display: block;
     margin-top: 153px;
     margin-left: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: -52px;
+    margin-left: auto;
+    padding-bottom: 78px;
   }
 }
