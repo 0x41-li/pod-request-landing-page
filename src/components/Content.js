@@ -15,13 +15,15 @@ import patternPoints from "../assets/images/pattern-points.png";
 
 export default function Header() {
   let [emailValue, setEmailValue] = useState("");
-  let [emailValid, setEmailValid] = useState(true);
+  let [errorMssg, setErrorMssg] = useState("");
 
   function handleSubmit(e) {
-    if (validateEmail(emailValue)) {
-      setEmailValid(true);
-    } else {
-      setEmailValid(false);
+    console.log(validateEmail(emailValue));
+    if (validateEmail(emailValue) === "empty") {
+      setErrorMssg("Oops! Please add your email");
+      e.preventDefault();
+    } else if (validateEmail(emailValue) === "invalid") {
+      setErrorMssg("Oops! Please check your email");
       e.preventDefault();
     }
   }
@@ -71,8 +73,8 @@ export default function Header() {
             />
             <label htmlFor="email">Email address</label>
           </div>
-          <p className={`content__form-error ${emailValid ? "d-n" : ""}`}>
-            Oops! Please check your email
+          <p className={`content__form-error ${errorMssg === "" ? "d-n" : ""}`}>
+            {errorMssg}
           </p>
           <button className="content__form-btn">Request Access</button>
         </form>
@@ -85,8 +87,14 @@ export default function Header() {
 // Helper function to check if an email is valid, just copied from internet
 
 function validateEmail(email) {
-  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
-    return true;
+  const re =
+    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+  if (email === "") {
+    return "empty";
+  } else if (!re.test(String(email).toLowerCase())) {
+    return "invalid";
   }
+
   return false;
 }
