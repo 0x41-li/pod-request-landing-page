@@ -289,8 +289,11 @@ h1 span {
 }
 
 .content__form-error {
-  position: absolute;
-  top: 100%;
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 100%;
+  }
+
   font-size: 1.2rem;
   line-height: 1.4rem;
 
