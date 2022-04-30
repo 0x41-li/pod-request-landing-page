@@ -71,7 +71,7 @@ body {
   @media screen and (min-width: 768px) {
     margin-top: 50px;
     margin-left: 39px;
-    justify-content: start;
+    justify-content: flex-start;
   }
 
   @media screen and (min-width: 1024px) {
@@ -183,7 +183,7 @@ h1 span {
   display: none;
   @media screen and (min-width: 768px) {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     gap: 40px;
   }
